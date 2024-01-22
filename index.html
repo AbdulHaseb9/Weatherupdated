@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div id="container">
+        <img src="img/bg.png" alt="">
+        <div class="main">
+            <div class="main-header">
+                <h4 id="cityname">Enter Your City</h4>
+                <div class="weather">
+                    <div class="weather-name">
+                        <p id="weathercondition">Not Found</p>
+                    </div>
+                    <div class="weather-pic">
+                        <img id="weatherimg" src="img/cloudy-weather-3311758-2754892 1.png" alt="">
+                    </div>
+                    <div class="weather-degree">
+                        <h1><span id="weatherdegree">0</span>&deg;</h1>
+                    </div>
+                    <div class="weather-date">
+                        <h6 id="datetime"></h6>
+                    </div>
+                </div>
+                <div class="weather-info">
+                    <div class="preciptation">
+                        <div class="preciptation-img">
+                            <img src="img/preciption.png" alt="">
+                        </div>
+                        <div class="preciptation-percent">
+                            <p><span id="preciptationvalue">0</span>%</p>
+                        </div>
+                        <div class="preciptation-name">
+                            <p>Preciptation</p>
+                        </div>
+                    </div>
+                    <div class="humidity">
+                        <div class="humidity-img">
+                            <img src="img/humdity.png" alt="">
+                        </div>
+                        <div class="humidity-percent">
+                            <p><span id="humdityvalue">0</span>%</p>
+                        </div>
+                        <div class="humidity-name">
+                            <p>Humdity</p>
+                        </div>
+                    </div>
+                    <div class="wind-speed">
+                        <div class="wind-speed-img">
+                            <img src="img/wind.png" alt="wind-speed">
+                        </div>
+                        <div class="wind-speed-percent">
+                            <p>
+                                <span id="windspeed">0</span> km/h
+                            </p>
+                        </div>
+                        <div class="wind-speed-name">
+                            <p>Wind-Speed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <i id="addicon" class="fa-solid fa-plus"></i>
+                    <i id="minusicon" class="fa-solid fa-minus"></i>
+                    <div class="city-inp">
+                        <input type="text" id="getcity" placeholder="Enter Your Country/City">
+                        <i onclick="api()" class="fa-solid  fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
